@@ -11,12 +11,11 @@ pipeline{
                 sh './gradlew assembleRelease'
              }
         }
-
-    }
-    stage('UnitTest'){   
-        steps {
-            sh './gradlew test' 
+       stage('UnitTest'){   
+             steps {
+                sh './gradlew test' 
+             }
         }
-    }
 
+    }
 }
